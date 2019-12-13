@@ -1,0 +1,65 @@
+.request {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 15px 0 15px;
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+.request__title {
+    padding: 0 13px;
+    margin-bottom: 16px;
+    color: #222222;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.request__list {
+    @include reset-list;
+    width: 100%;
+}
+
+.request__item {
+    position: relative;
+}
+
+.request__input {
+    // position: relative;
+    width: 100%;
+    padding: 16px 40px 16px 13px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: #999999;
+    outline: none;
+}
+
+.request__item--name::after,
+.request__item--phone::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    width: 18px;
+    height: 18px;
+    margin-top: -18px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.request__item--name::after {
+    background-image: url("../img/user.svg");
+}
+
+.request__item--phone::after {
+    background-image: url("../img/phone.svg");
+}
+
+.request__submit {
+    margin-bottom: 35px;
+}
+
+

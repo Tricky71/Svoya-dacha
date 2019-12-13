@@ -1,0 +1,40 @@
+.button {
+    display: block;
+    width: 270px;
+    padding: 21px 20px 16px 20px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #fefefe;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+        &:hover {
+           text-decoration: none;
+           color: #fff;
+        }
+}
+
+.button--green {
+    background-image: linear-gradient(#90c817,#70b218,#58a118);
+    box-shadow: 0 5px #437f13;
+        &:hover {
+           background-image: linear-gradient(#58a118,#70b218,#90c817);
+        }
+        &:active {
+            color: #9d8830;
+        }
+}
+
+.button--orange {
+    background-image: linear-gradient(#f9bc1e,#e8831c);
+    box-shadow: 0 5px #b86516;
+        &:hover {
+           background-image: linear-gradient(#e8831c,#f9bc1e);
+        }
+        &:active {
+            color: #9d8830;
+        }
+}
